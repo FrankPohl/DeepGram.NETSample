@@ -28,7 +28,7 @@ var waveOutFormat = new WaveFormat(sampleRate: _waveIn.WaveFormat.SampleRate / 3
 WaveFileWriter _waveWriter = new WaveFileWriter(audioInputFile, waveOutFormat);
 Console.WriteLine($"Saving audio input to: {audioInputFile}");
 
-// Setup the connection in the deepgram sdk
+// Setup the connection in the deepgram sdk. Put in the secret key of your API
 const string secret = "6ad54b90768a3c6f88af80f633682fae31b87201";
 var credentials = new Credentials(secret);
 
